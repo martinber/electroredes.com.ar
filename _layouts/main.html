@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Electro Redes - {{ page.title }}</title>
+	<meta charset="utf-8" />
+
+	<!--
+		Para que los celulares reporten el tamaño real
+	-->
+	<meta name="viewport"
+			content="width=device-width, initial-scale=1" />
+
+	<!--
+		The below three lines are a fix to get HTML5 semantic elements working
+		in old versions of Internet Explorer.
+
+		Desde https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+	-->
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=47BKnLQyQq">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=47BKnLQyQq">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/css/normalize.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="/css/noscript.css" />
+	</noscript>
+
+</head>
+<body>
+
+	<!-- Header -->
+
+	<header id="header">
+		<div class="inner">
+			<a href="/index.html" class="logo">
+				<img src="/imagenes/logo.png" alt="Logo Electro Redes"/>
+			</a>
+{% include nav.html %}
+			<button id="boton_abrir_panel">
+				<img src="/imagenes/menu.svg" alt="Menu"/>
+			</button>
+		</div>
+	</header>
+
+<!-- Panel animado para moviles -->
+
+	<aside id="panel">
+		<button id="boton_cerrar_panel">
+			<img src="/imagenes/close.svg" alt="Close"/>
+		</button>
+{% include nav.html %}
+	</aside>
+
+<!-- Nav para móviles sin Javascript -->
+
+	<noscript>
+		<div class="noscript">
+{% include nav.html %}
+		</div>
+	</noscript>
+
+<!-- Banner y contenido -->
+
+{{ content }}
+
+<!-- Footer -->
+
+	<footer id="footer">
+		<div class="inner">
+
+			<aside>
+{% include nav.html %}
+				<hr>
+{% include nav_servicios.html %}
+			</aside>
+
+			<address>
+				Entre Ríos 344 <br />
+				Ucacha (2677), Córdoba, Argentina <br />
+
+				<hr>
+
+				ventas<span class="anti_spam">[ignorar]</span>@electroredes<span class="anti_spam">[ignorar]</span>.com.ar <br />
+				gbernardi<span class="anti_spam">[ignorar]</span>@ucachanet<span class="anti_spam">[ignorar]</span>.com.ar <br />
+
+				Tel/Fax: 0353-4883383 <br />
+				Celular: 0353-155658792 <br />
+				Celular: 0353-155691991 <br />
+			</address>
+
+			<img id="logo_cadiec" src="/imagenes/cadiec.png" alt="Logotipo de CADIEC" \>
+
+			<p>
+				&copy; {{ site.time | date: '%Y' }} Electro Redes SRL <br />
+				Diseño web: <a href="https://mbernardi.com.ar">Martín Bernardi</a>
+			</p>
+
+		</div>
+	</footer>
+
+<!-- Scripts -->
+
+	<script src="/scripts/main.js"></script>
+
+</body>
+
+</html>

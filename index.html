@@ -1,0 +1,48 @@
+---
+layout: main
+
+title: Inicio
+---
+
+<!--
+	TODO:
+	- CSS para banners hidpi
+	- Ver que hacer con la lista de trabajos vieja
+	- Ver que hacer con la lista de trabajos de cada servicio
+	- Actualizar cifras de servicios electricos
+	- Hacer más lindo el strong del index
+	- Probar links a telefonos
+-->
+
+<!-- Banner -->
+
+<div id="banner" class="no-gradient">
+</div>
+
+
+<!-- Contenido -->
+
+<div id="contenido">
+
+	<!-- Introduccion -->
+
+	<section>
+
+		<p><strong>
+			Contamos con {{ site.time | date: '%Y' | minus:1999 }} años de
+			experiencia satisfaciendo de modo integral las necesidades de las
+			Cooperativas en lo que respecta a la construcción de nuevas obras y
+			mantenimiento de redes existentes.
+		</strong></p>
+
+		<p>Para todo ello Electro Redes S.R.L. cuenta con una infraestructura
+		acorde a la tarea y con personal capacitado en los diferentes aspectos que
+		abarca nuestro accionar: Ingeniería, Construcción y Mantenimiento.</p>
+
+	</section>
+
+	<!-- Servicios -->
+
+{% include servicios.html %}
+
+</div>

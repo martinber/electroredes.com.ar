@@ -1,0 +1,21 @@
+---
+layout: standard
+---
+
+<article class="with_sidebar">
+
+	<img src="/imagenes/servicios/{{ page.imagen }}" alt="{{ page.title }}" />
+
+{{ content }}
+
+<!-- TODO: Actualizar -->
+	<p>
+		<a class="boton_trabajos" href="/trabajos.pdf">Ver lista de trabajos completa</a>
+	</p>
+
+</article>
+
+<aside class="sidebar">
+{% include nav_servicios.html %}
+</aside>
+

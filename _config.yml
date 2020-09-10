@@ -1,0 +1,16 @@
+title: Electro Redes
+description:
+  Construcción y mantenimiento de redes de energía eléctrica y de
+  telecomunicaciones. Ucacha, Córdoba, Argentina.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://electroredes.com.ar"
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock

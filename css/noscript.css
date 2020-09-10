@@ -1,0 +1,10 @@
+#panel
+{
+	visibility: hidden !important;
+	transition: all 0s !important;
+}
+
+#boton_abrir_panel
+{
+	visibility: hidden !important;
+}

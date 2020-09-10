@@ -1,0 +1,66 @@
+---
+layout: standard
+
+title: Empresa
+---
+
+<p>
+	Electro Redes ha sido creada en 1999 con el fin de satisfacer, de modo
+	integral, las necesidades de las empresas distribuidoras y cooperativas en lo
+	que respecta a la construcción de nuevas obras y mantenimiento de redes
+	eléctricas y de telecomunicaciones.
+	La empresa cuenta con {{ site.time | date: '%Y' | minus:1999 }} años de
+	experiencia, una infraestructura acorde a la tarea y con personal capacitado
+	en los diferentes aspectos que abarca su accionar: ingeniería, construcción y
+	mantenimiento.
+</p>
+<p>
+	Está formada por un equipo de trabajo calificado y comprometido
+	con las necesidades de sus clientes: 2 ingenieros proyectistas, ingeniero
+	asesor en seguridad e higiene en el trabajo, capataz y personal con amplia
+	experiencia.
+</p>
+<p>
+	Dispone de un moderno equipamiento: cuatro camiones con hidrogrúas de 8,10,20
+	y 21TNM y semirremolque, junto con dos camionetas. En los móviles se dispone
+	de todos los elementos necesarios para trabajos en líneas de media tensión,
+	con las medidas de seguridad necesarias.  También cuenta con instrumentos
+	calibrados para mediciones de energía, de cables, transformadores, puestas a
+	tierra y fibra óptica. (meghometro, telurímetro, secuencímetro, analizador de
+	redes eléctricas, termografía, OTDR, fusionadora de fibra, dinamómetro 5Tn,
+	etc.).
+</p>
+<p>
+	En lo que respecta a ingeniería se realiza proyecto, dirección, representación
+	técnica y construcción de líneas de media tensión, fibra óptica o proyectos de
+	generación distribuida.
+</p>
+
+<h2>Datos</h2>
+
+<p>
+	Electro Redes S.R.L.<br />
+	Domicilio legal: Entre Ríos 344 - (CP 2677) Ucacha, Córdoba<br />
+	Responsable inscripto - CUIT 30-66887151-4<br />
+	Nº inscripción ingresos brutos: 208072609<br />
+</p>
+
+<h2>Galería</h2>
+
+<div id="galeria">
+
+{% comment %}
+
+	Para editar las imágenes que aparecen en la galería uno debe:
+	- Agregar/sacar imágenes de `imagenes/galeria/original/`
+	- Hacer copias de menor resolución a `imagenes/galeria/thumbnail`
+	- Editar la lista de nombres separados por comas que está acá abajo
+
+{% endcomment %}
+{% assign imagenes = "equipo,1,2,3,4,gustavo,5,6,7" | split: ',' %}
+
+{% for img in imagenes %}
+	<a target="_blank" href="imagenes/galeria/original/{{ img }}.jpg"><img src="imagenes/galeria/thumbnail/{{ img }}.jpg" alt="Foto: {{ img }}" /></a>
+{% endfor %}
+
+</div>

@@ -1,0 +1,19 @@
+<nav>
+	<ul>
+		<li {% if page.name == 'index.html' %}class='current'{% endif %}>
+			<a href="/index.html">Inicio</a>
+		</li>
+		<li {% if page.url == '/empresa.html' %}class='current'{% endif %}>
+			<a href="/empresa.html">Empresa</a>
+		</li>
+		<li {% if page.url == '/servicios.html' or page.dir == '/servicios/' %}class='current'{% endif %}>
+			<a href="/servicios.html">Servicios</a>
+		</li>
+		<li {% if page.url == '/renovables.html' %}class='current'{% endif %}>
+			<a href="/renovables.html" class="renovables">Energías renovables</a>
+		</li>
+		<li {% if page.url == '/contacto.html' %}class='current'{% endif %}>
+			<a href="/contacto.html">Contacto</a>
+		</li>
+	</ul>
+</nav>
