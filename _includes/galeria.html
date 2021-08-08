@@ -1,0 +1,19 @@
+<div class="galeria">
+
+	{% comment %}
+
+		Para editar las imágenes que aparecen en la galería uno debe:
+		- Agregar/sacar imágenes de `imagenes/galeria/`
+		- Hacer copias de menor resolución a `imagenes/galeria/*.thumb.jpg`
+		- Editar la lista de nombres separados por comas que está acá abajo
+
+	{% endcomment %}
+	{% assign imagenes = "1,2,3,4,5" | split: ',' %}
+
+	{% for img in imagenes %}
+		<a target="_blank" href="/imagenes/galeria/{{ img }}.jpg">
+			<img src="/imagenes/galeria/{{ img }}.thumb.jpg" alt="Foto: {{ img }}" />
+		</a>
+	{% endfor %}
+
+</div>

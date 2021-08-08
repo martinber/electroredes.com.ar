@@ -573,20 +573,35 @@ iframe
 	border: 1px solid;
 }
 
-#galeria
+.galeria
 {
 	column-count: 3;
 	column-gap: 1em;
 }
 
-#galeria img
+.galeria img
 {
 	margin-bottom: 1em;
 }
 
+#logo-instagram
+{
+	width: 100%;
+	max-width: 8em;
+	display: block;
+	margin: 1em auto;
+	opacity: 90%;
+}
+
+#instagram-galeria
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
 @media screen and (max-width: 800px) {
 
-	#galeria
+	.galeria
 	{
 		column-count: 2;
 	}
@@ -595,7 +610,7 @@ iframe
 
 @media screen and (max-width: 560px) {
 
-	#galeria
+	.galeria
 	{
 		column-count: 1;
 	}

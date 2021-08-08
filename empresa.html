@@ -15,25 +15,25 @@ title: Empresa
 	mantenimiento.
 </p>
 <p>
-	Está formada por un equipo de trabajo calificado y comprometido
-	con las necesidades de sus clientes: 2 ingenieros proyectistas, ingeniero
-	asesor en seguridad e higiene en el trabajo, capataz y personal con amplia
+	Está formada por un equipo de trabajo calificado y comprometido con las
+	necesidades de sus clientes: 2 ingenieros proyectistas, ingeniero asesor en
+	seguridad e higiene en el trabajo, capataz y personal con amplia
 	experiencia.
 </p>
 <p>
-	Dispone de un moderno equipamiento: cuatro camiones con hidrogrúas de 8,10,20
-	y 21TNM y semirremolque, junto con dos camionetas. En los móviles se dispone
-	de todos los elementos necesarios para trabajos en líneas de media tensión,
-	con las medidas de seguridad necesarias.  También cuenta con instrumentos
-	calibrados para mediciones de energía, de cables, transformadores, puestas a
-	tierra y fibra óptica. (meghometro, telurímetro, secuencímetro, analizador de
-	redes eléctricas, termografía, OTDR, fusionadora de fibra, dinamómetro 5Tn,
-	etc.).
+	Dispone de un moderno equipamiento: tres camiones con hidrogrúas de 10, 20 y
+	21TNM y semirremolque, retroexcavadora con zanjadora y dos camionetas doble
+	cabina. En los móviles se dispone de todos los elementos necesarios para
+	trabajos en líneas de media tensión, con las medidas de seguridad necesarias.
+	También cuenta con instrumentos calibrados para mediciones de energía, de
+	cables, transformadores, puestas a tierra y fibra óptica. (meghómetro,
+	telurímetro, secuencímetro, analizador de redes eléctricas, termografía, OTDR,
+	fusionadora de fibra, dinamómetro 5Tn, etc.).
 </p>
 <p>
-	En lo que respecta a ingeniería se realiza proyecto, dirección, representación
-	técnica y construcción de líneas de media tensión, fibra óptica o proyectos de
-	generación distribuida.
+	En lo que respecta a ingeniería se realizan proyectos, dirección,
+	representación técnica y construcción de líneas de media y baja tensión aérea
+	y subterráneas, fibra óptica o proyectos de generación distribuida.
 </p>
 
 <h2>Datos</h2>
@@ -45,22 +45,37 @@ title: Empresa
 	Nº inscripción ingresos brutos: 208072609<br />
 </p>
 
-<h2>Galería</h2>
+<h2 id="galeria">Galería</h2>
 
-<div id="galeria">
+{% include galeria.html %}
 
-{% comment %}
+<h3>Servicios eléctricos</h3>
 
-	Para editar las imágenes que aparecen en la galería uno debe:
-	- Agregar/sacar imágenes de `imagenes/galeria/original/`
-	- Hacer copias de menor resolución a `imagenes/galeria/thumbnail`
-	- Editar la lista de nombres separados por comas que está acá abajo
+{% include galeria_electricos.html %}
 
-{% endcomment %}
-{% assign imagenes = "equipo,1,2,3,4,gustavo,5,6,7" | split: ',' %}
+<h3>Energías renovables</h3>
 
-{% for img in imagenes %}
-	<a target="_blank" href="imagenes/galeria/original/{{ img }}.jpg"><img src="imagenes/galeria/thumbnail/{{ img }}.jpg" alt="Foto: {{ img }}" /></a>
-{% endfor %}
+{% include galeria_renovables.html %}
 
+<h3>Telecomunicaciones</h3>
+
+{% include galeria_telecomunicaciones.html %}
+
+<h3>Grúa y transporte</h3>
+
+{% include galeria_grua.html %}
+
+<h3>Construcción, zanjeos y colocación de ductos</h3>
+
+{% include galeria_construccion.html %}
+
+<h3>Más imágenes</h3>
+
+<div id="instagram-galeria">
+
+	<a id="boton-instagram-galeria" class="boton_info" href="https://instagram.com/electro.redes">
+		<img id="logo-instagram" src="/imagenes/instagram_white.png" alt="Logotipo de Instagram" \>
+		Síguenos en Instagram
+	</a>
 </div>
+
